@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#" class="active" data-section="dashboard">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section="hobby">
+                        <span class="icon">
+                            <ion-icon name="rocket-sharp"></ion-icon>
+                        </span>
+                        <span class="title">Hobby</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-section="friends">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Friends</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="search">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="user">
+                    <img src="assets/imgs/profile.jpg" alt="Profile Picture">
+                </div>
+            </div>
+
+            <!-- ======================= Content ================== -->
+            <div class="content" id="dashboard">
+                <h3>Welcome to the Dashboard</h3>
+                <p>This is a simple website demonstrating various HTML and CSS elements.</p>
+                <h3>Contact Form</h3>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="content" id="hobby" style="display: none;">
+                <h3>Hobby</h3>
+                <p>Here are some of my hobbies:</p>
+                <div class="hobby-list">
+                    <div class="hobby-item">
+                        <img src="assets/imgs/reading.jpg" alt="Reading">
+                        <p>Reading</p>
+                    </div>
+                    <div class="hobby-item">
+                        <img src="assets/imgs/traveling.jpg" alt="Traveling">
+                        <p>Traveling</p>
+                    </div>
+                    <div class="hobby-item">
+                        <img src="assets/imgs/photography.jpg" alt="Photography">
+                        <p>Photography</p>
+                    </div>
+                    <div class="hobby-item">
+                        <img src="assets/imgs/cooking.jpg" alt="Cooking">
+                        <p>Cooking</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" id="friends" style="display: none;">
+                <h3>Friends</h3>
+                <div class="friend-list">
+                    <div class="friend">
+                        <img src="assets/imgs/agung.jpg" alt="Agung">
+                        <h4>Agung</h4>
+                        <p>Location: Gamping</p>
+                    </div>
+                    <div class="friend">
+                        <img src="assets/imgs/buya.jpg" alt="Buya">
+                        <h4>Buya</h4>
+                        <p>Location: Gamping</p>
+                    </div>
+                    <div class="friend">
+                        <img src="assets/imgs/izal.jpg" alt="Izal">
+                        <h4>Izal</h4>
+                        <p>Location: Godean</p>
+                    </div>
+                    <div class="friend">
+                        <img src="assets/imgs/ozan.jpg" alt="Ozan">
+                        <h4>Ozan</h4>
+                        <p>Location: Kosputih</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="script.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
